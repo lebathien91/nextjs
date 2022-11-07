@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  img {
+    @apply w-full;
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+}
+
+@layer components {
+  .ck-content ul,
+  .ck-content ol,
+  .single ul,
+  .single ol {
+    @apply px-8;
+  }
+  .ck-content ol li,
+  .single ol li {
+    @apply list-decimal my-1;
+  }
+  .ck-content ul li,
+  .single ul li {
+    @apply list-disc my-1;
+  }
+  .ck-content ul.todo-list li,
+  .single ul.todo-list li {
+    @apply list-none;
+  }
+  .ck-content h1,
+  .single h1 {
+    @apply my-4 scroll-mt-20;
+  }
+  .ck-content h2,
+  .single h2 {
+    @apply my-4 scroll-mt-20;
+  }
+  .ck-content p,
+  .ck-content h3,
+  .single p,
+  .single h3 {
+    @apply my-2 scroll-mt-20;
+  }
+  .ck-content h4,
+  .single h4 {
+    @apply font-bold scroll-mt-20;
+  }
+  .ck-content h5,
+  .single h5 {
+    @apply font-bold scroll-mt-20;
+  }
+}
