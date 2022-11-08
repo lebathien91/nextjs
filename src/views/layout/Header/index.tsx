@@ -18,7 +18,7 @@ const Header = () => {
           />
           <Link href="/">
             <a>
-              <img src="/logo.png" alt="logo" className="h-8" />
+              <img src="/logo.webp" alt="logo" className="h-8" />
             </a>
           </Link>
           <div className="flex">

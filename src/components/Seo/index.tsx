@@ -10,11 +10,11 @@ interface ISeo {
 const Seo = ({ title, description, image, article }: ISeo) => {
   return (
     <Head>
-      <link rel="shortcut icon" href="/favicon.icon" />
-      <title>{`${title} | Tôi lập trình`}</title>
+      <link rel="shortcut icon" href="/favicon.webp" />
+      <title>{`${title} | Bác sĩ nhà quê`}</title>
 
       <meta property="og:locale" content="vi_VN" />
-      <meta property="og:site_name" content="Tôi lập trình" />
+      <meta property="og:site_name" content="Bác sĩ nhà quê" />
 
       <meta property="og:title" content={title} />
       <meta name="twitter:title" content={title} />
