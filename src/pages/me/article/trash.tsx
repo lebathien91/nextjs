@@ -275,7 +275,7 @@ export default function TrashArticlesPage() {
               <td className="py-3 border-b pr-4">{index + 1}</td>
               <td className="py-3 border-b">{post.title}</td>
               <td className="py-3 border-b">
-                {typeof post.user === "object" && post.user.username}
+                {typeof post.user === "object" ? post.user?.username : null}
               </td>
               <td className="py-3 border-b">
                 <div className="flex">

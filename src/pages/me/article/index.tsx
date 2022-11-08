@@ -248,7 +248,7 @@ export default function ArticlesPage() {
                 </h4>
               </td>
               <td className="py-3 border-b">
-                {typeof post.user === "object" && post.user.username}
+                {typeof post.user === "object" ? post.user?.username : null}
               </td>
               <td className="py-3 border-b">
                 <div className="flex">
