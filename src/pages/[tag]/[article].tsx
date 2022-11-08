@@ -68,7 +68,6 @@ export async function getStaticProps({ params }: any) {
     const articleSlug = params.article;
 
     const res = await getData(`tag/slug/${tagSlug}`);
-
     const tag = res.tag;
 
     const articleRes = await getData(`article?tag=${tag._id}`);
