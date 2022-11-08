@@ -57,6 +57,7 @@ const NavMenu = ({ isMobile, setIsMobile }: NavProps) => {
         <li className="flex justify-between border-b lg:border-0 px-3 py-1 lg:p-0 items-center">
           <Link href="/">
             <a
+              onClick={() => setIsMobile(false)}
               className={`mr-4 w-[50px] h-[50px] ${
                 sticky ? "lg:block" : "lg:hidden"
               }`}
@@ -78,7 +79,7 @@ const NavMenu = ({ isMobile, setIsMobile }: NavProps) => {
             } hover:text-red-700`}
           >
             <Link href={`/category/${category?.slug}`}>
-              <a>{category.name}</a>
+              <a onClick={() => setIsMobile(false)}>{category.name}</a>
             </Link>
           </li>
         ))}
