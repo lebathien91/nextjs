@@ -70,6 +70,7 @@ export async function getStaticProps() {
         tags,
         count,
       },
+      revalidate: 1,
     };
   } catch (error) {
     return {
